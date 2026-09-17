@@ -3,8 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "assumptions",
-      "model",
       "prediction",
       "verification",
       "claim",
@@ -15,7 +13,7 @@
   },
   "record": {
     "id": "68eaa85c-2a88-433d-9579-0504c92ea09e",
-    "revision": "361",
+    "revision": "1011",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -47,7 +45,7 @@
       "assumptions": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "I am assuming that the aircraft's control surfaces produces a change in forces and moments that scales linearly with their deflection angle(measured in radians). This assumption fails when the control surface deflects too far and airflow seperates entirely, causing a significant loss in lift and demand moments."
       },
       "inputs": {
         "suppliedBy": "instructor",
@@ -57,7 +55,7 @@
       "model": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "Demand = Iy * target - competing\n\nDynamic_pressure = 0.5 * density * V^2\n\nCm = moment / 0.5 * density * V^2 * mean chord length\n\nMoment = 0.5 * density * V^2 * mean chord length * Cm"
       },
       "prediction": {
         "suppliedBy": "student",

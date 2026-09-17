@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: 68eaa85c-2a88-433d-9579-0504c92ea09e
 
-- Record revision: 361
+- Record revision: 1011
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: assumptions, model, prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -42,13 +42,23 @@ A downward force aft of the CG will cause a positive nose up moment because the 
 **Prompt:** Explain one supplied assumption and what could invalidate it: planar motion, fixed reference, local linear effectiveness, no trim or damping.
 
 **Student response:**
-_Missing — no response supplied._
+```
+I am assuming that the aircraft's control surfaces produces a change in forces and moments that scales linearly with their deflection angle(measured in radians). This assumption fails when the control surface deflects too far and airflow seperates entirely, causing a significant loss in lift and demand moments.
+```
 
 ### model
 **Prompt:** Write your demand, dynamic-pressure, coefficient and moment equations. Identify which quantities are supplied and which are unknown.
 
 **Student response:**
-_Missing — no response supplied._
+```
+Demand = Iy * target - competing
+
+Dynamic_pressure = 0.5 * density * V^2
+
+Cm = moment / 0.5 * density * V^2 * mean chord length
+
+Moment = 0.5 * density * V^2 * mean chord length * Cm
+```
 
 ### prediction
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.
