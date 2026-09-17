@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: 68eaa85c-2a88-433d-9579-0504c92ea09e
 
-- Record revision: 1011
+- Record revision: 2055
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -64,7 +64,14 @@ Moment = 0.5 * density * V^2 * mean chord length * Cm
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.
 
 **Student response:**
-_Missing — no response supplied._
+```
+Sign of the elevator moment will be positive as the elevator has a negative angle of attack. Negative AOA means downward lift force. This force is acting aft of the CG so it torques the aircraft in the nose up direction.
+
+Effect of halving the airspeed(velocity) will decrease the moment by a factor of 4 as per the moment equation, assuming that Cm, dynamic pressure, and mean chord length remain constant.
+
+A competing moment can be thought of as the total moment upon the aircraft  that is torqing the aircraft in the opposite direction of the demand monment. Competing moment can come from drag forces and lift forces on other control surfaces and components. It is not necessarily constant.
+
+```
 
 ### verification
 **Prompt:** Show one independent hand calculation with units. Compare it with your model, and explain a sign, unit, or limiting-case check.

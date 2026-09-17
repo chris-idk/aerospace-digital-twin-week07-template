@@ -3,7 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "prediction",
       "verification",
       "claim",
       "reflection",
@@ -13,7 +12,7 @@
   },
   "record": {
     "id": "68eaa85c-2a88-433d-9579-0504c92ea09e",
-    "revision": "1011",
+    "revision": "2055",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -60,7 +59,7 @@
       "prediction": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "Sign of the elevator moment will be positive as the elevator has a negative angle of attack. Negative AOA means downward lift force. This force is acting aft of the CG so it torques the aircraft in the nose up direction.\n\nEffect of halving the airspeed(velocity) will decrease the moment by a factor of 4 as per the moment equation, assuming that Cm, dynamic pressure, and mean chord length remain constant.\n\nA competing moment can be thought of as the total moment upon the aircraft  that is torqing the aircraft in the opposite direction of the demand monment. Competing moment can come from drag forces and lift forces on other control surfaces and components. It is not necessarily constant.\n"
       },
       "execution": {
         "suppliedBy": "automatic",
